@@ -3,14 +3,6 @@
 hostfile=$1
 portfile=$2
 
-if [ "$1" == "" ]
-then
-echo "Please enter an Address!"
-elif [ "2" == "" ]
-then
-echo "Please enter a port number!"
-else
-
 echo "host,port"
 for host in $(cat $hostfile); do
   for port in $(cat $portfile); do
